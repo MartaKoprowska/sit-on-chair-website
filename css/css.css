@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.cointainer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular.woff2') format('woff2'),
+    url('../fonts/raleway-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold.woff 2') format('woff2'),
+    url('../fonts/raleway-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'ralewayregular', sans-serif;
+}
+
+
+.cointainer {
+    margin: 0 auto;
+    width: 1000px;
+    border: 1px solid red;
+}
+
+/*---------------------------------------------------------------
+   główne sekcje
+ --------------------------------------------------------------*/
+/*---------------------------------------------------------------
+   site-header
+ --------------------------------------------------------------*/
+.site-header {
+    background-color: black;
+    padding: 10px 0;
+
+}
+
+.site-header p {
+    text-transform: uppercase;
+    color: white;
+    font-size: 12px;
+    padding-left: 55px;
+    padding-top: 4px;
+    float: left;
+}
+
+.site-header p span {
+    color: #30B99F;
+    font-family: 'ralewaybold';
+    font-weight:bold;
+}
+
+.header-menu {
+    list-style: none;
+    float: right;
+    padding-right: 55px;
+    text-transform: uppercase;
+}
+
+.header-menu a {
+    text-decoration: none;
+    color: white;
+
+
+}
+
+.header-menu li {
+    display: inline-block;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/*---------------------------------------------------------------
+   big-chair-section
+ --------------------------------------------------------------*/
+.big-chair-section {
+    background-color: #FAFAFA;
+    background-image: linear-gradient(180deg, #FAFAFA, #D1D0D8);
+    padding: 45px 0;
+}
+
+.big-chair-section .column1 {
+    width: 45%;
+    float: left;
+}
+
+.big-chair-section .column2 {
+    width: 40%;
+    float: left;
+    text-align: center;
+
+}
+
+.big-chair-section h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 40px;
+}
+
+.big-chair-section p {
+    font-size: 14px;
+    color: #1F1F1F;
+    line-height: 20px;
+    margin: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #30B99F;
+    border-radius: 5px;
+    margin: 15px auto;
+}
+.see-more {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+    display: inline-block;
+    padding: 10px 30px;
+
+}
+
+.green-word-h1 {
+    color: #30B99F;
+    font-family: 'ralewaybold';
+}
+
+
+.big-chair-section .cointainer {
+    position: relative;
+}
+
+.less-greater-signs {
+    font-size: 64px;
+    color: #30B99F;
+}
+
+.less-than-sign {
+    position: absolute;
+    top: 35%;
+    left:0;
+}
+
+.greater-than-sign {
+    position: absolute;
+    top: 35%;
+    right: 0;
+}
+
+
+.greater-than-sign {
+
+}
+
+
+/*---------------------------------------------------------------
+   chairs-section
+ --------------------------------------------------------------*/
+
+
+.chairs-section {
+    background-color: white;
+    padding: 35px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.price-list-section {
+    background-color: #F1F1F1;
+    padding: 35px 0;
+}
+
+.form-section {
+    background-color: white;
+    padding: 35px 0;
+}
+
+.site-footer {
+    background-color: white;
+    padding: 80px;
+}
+
