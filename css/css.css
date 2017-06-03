@@ -11,7 +11,7 @@
 }
 
 @font-face {
-    font-family: 'ralewayregular';
+    font-family: 'raleway';
     src: url('../fonts/raleway-regular.woff2') format('woff2'),
     url('../fonts/raleway-regular.woff') format('woff');
     font-weight: normal;
@@ -20,16 +20,54 @@
 }
 
 @font-face {
-    font-family: 'ralewaybold';
+    font-family: 'raleway';
     src: url('../fonts/raleway-bold.woff 2') format('woff2'),
     url('../fonts/raleway-bold.woff') format('woff');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 
 }
 
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/light/raleway-light.woff2') format('woff2'),
+    url('../fonts/light/raleway-light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway-extralight.woff2') format('woff2'),
+    url('../fonts/raleway-extralight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway-medium.woff2') format('woff2'),
+    url('../fonts/raleway-medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway-semibold.woff2') format('woff2'),
+    url('../fonts/raleway-semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
 body {
-    font-family: 'ralewayregular', sans-serif;
+    font-family: 'raleway', sans-serif;
 }
 
 
@@ -48,6 +86,7 @@ body {
 .site-header {
     background-color: black;
     padding: 10px 0;
+    width: 100%;
 
 }
 
@@ -62,7 +101,6 @@ body {
 
 .site-header p span {
     color: #30B99F;
-    font-family: 'ralewaybold';
     font-weight:bold;
 }
 
@@ -112,11 +150,13 @@ body {
     text-transform: uppercase;
     font-size: 30px;
     margin: 40px;
+    font-weight: 500;
 }
 
 .big-chair-section p {
     font-size: 14px;
-    color: #1F1F1F;
+    font-weight: 500;
+    color: #4D4D4D;
     line-height: 20px;
     margin: 20px;
 }
@@ -133,13 +173,14 @@ body {
     color: white;
     font-size: 18px;
     display: inline-block;
-    padding: 10px 30px;
+    padding: 13px 35px;
 
 }
 
 .green-word-h1 {
     color: #30B99F;
-    font-family: 'ralewaybold';
+    font-weight: bold;
+
 }
 
 
@@ -165,9 +206,6 @@ body {
 }
 
 
-.greater-than-sign {
-
-}
 
 
 /*---------------------------------------------------------------
@@ -177,29 +215,298 @@ body {
 
 .chairs-section {
     background-color: white;
-    padding: 35px 0;
+    padding-bottom: 68px;
+    padding-top: 30px;
+}
+
+.chairs-section .column {
+    width: 33.33%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.chairs-section .row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.chairs-section-text {
+    padding: 23px;
+    border: 1px solid #DFDFDF;
+}
+
+.chairs-section-h2 {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 7px;
+
+}
+
+.chairs-section-h2::after {
+    content: "";
+    display: block;
+    background-color: #30B99F;
+    width: 120px;
+    height: 5px;
+    margin-top: 3px;
 }
 
 
+.chairs-section-p {
+    font-size: 13px;
+    margin-bottom: 22px;
+    line-height: 17px;
+    color: #979797;
+    font-weight: 500;
+
+}
+
+.chairs-section-p:last-child {
+    margin-bottom: 20px;
+}
+
+.chair-name {
+    text-transform: uppercase;
+}
+
+.transparent-rectangle {
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    left:15px;
+    padding: 15px 15px 23px;
+
+}
 
 
+/*---------------------------------------------------------------
+   price-list-section
+ --------------------------------------------------------------*/
+.price-list-section .column {
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 33.33%;
+}
 
-
-
-
-
-
-
-
+.price-list-section .row:last-child {
+    margin-right: -15px;
+    margin-left: -15px;
+}
 .price-list-section {
     background-color: #F1F1F1;
-    padding: 35px 0;
+    padding-top: 45px;
+    padding-bottom: 66px;
 }
+
+.header-sections-h2 {
+    text-transform: uppercase;
+    color: #535353;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.header-sections-h2::after {
+    content: "";
+    display: block;
+    background-color: #30B99F;
+    width: 320px;
+    height: 7px;
+    margin-top: 4px;
+    margin-bottom: 70px;
+}
+
+.price-tag {
+    /*width: 265px;*/
+    height: 497px;
+    text-align: center;
+    background-color: #F9F9F9;
+    border: 2px solid #D3D3D3;
+    position: relative;
+}
+
+.circle-in-circle {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    position: absolute;
+    top: -36px;
+    left: 122px;
+}
+
+.circle-in-circle-grey {
+    background-color: #C2C2C2;
+    border-radius: 50%;
+    border: solid 2px #D3D3D3;
+    box-shadow: 0 0 0 13px #FFFFFF inset;
+}
+
+.circle-in-circle-green {
+    background-color: #FFFFFF;
+    border: solid 2px #30B99F;
+    box-shadow: 0 0 0 13px #30B99F inset;
+}
+
+.price-tag h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 33px;
+    margin-bottom: 30px;
+
+}
+
+.green-font {
+    color: #30B99F;
+}
+
+.white-font {
+    color: #FFFFFF;
+}
+
+
+.circle-with-price {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+
+    margin-bottom: 32px;
+    display: inline-block;
+    padding-top: 25px;
+    position: relative;
+}
+
+.grey {
+    background-color: #FFFFFF;
+    border: 2px solid #D3D3D3;
+}
+
+.green {
+    background-color: #FFFFFF;
+    border: 2px solid #30B99F;
+    color: #30B99F;
+}
+.circle-with-price p {
+
+    color: #C2C2C2;
+    font-weight: bold;
+}
+
+.green p {
+    color: #30B99F;
+}
+.circle-with-price p:first-child {
+    font-size: 45px;
+    margin-bottom: 7px;
+    font-weight: 600;
+    margin-left: -15px;
+
+}
+
+.circle-with-price p sup {
+    font-size: 14px;
+    position: absolute;
+    top: 29px;
+    left: 80px;
+}
+
+.circle-with-price p:last-child {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.options {
+    font-size: 20px;
+    padding: 8px 0;
+    letter-spacing: 1px;
+}
+
+.grey-options {
+    background-color: #E4E4E4;
+    color: #939393;
+}
+
+.grey-light-options {
+    background-color: #F1F1F1;
+    color: #8A8A8A;
+}
+
+.grey-extralight-options {
+    background-color: #FFFFFF;
+    color: #8A8A8A;
+}
+.button1 {
+    background-color: #30B99F;
+    display: inline-block;
+    border-radius: 7px;
+    margin-top: 116px;
+}
+
+.button2 {
+    background-color: #FFFFFF;
+    display: inline-block;
+    border-radius: 7px;
+    margin-top: 78px;
+}
+
+.button3 {
+    background-color: #30B99F;
+    display: inline-block;
+    border-radius: 7px;
+    margin-top: 38px;
+}
+.join {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    letter-spacing: 1px;
+}
+
+.price-tag-green {
+    background-color: #30B99F;
+    border: 2px solid #30B99F;
+}
+
+.circle-with-price-green {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    border: 2px solid #30B99F;
+    margin-bottom: 32px;
+    display: inline-block;
+    padding-top: 25px;
+    position: relative;
+}
+
+
+
+
+/*---------------------------------------------------------------
+   form-section
+ --------------------------------------------------------------*/
 
 .form-section {
     background-color: white;
     padding: 35px 0;
 }
+
+
+
+
+
+
 
 .site-footer {
     background-color: white;
