@@ -16,7 +16,6 @@
     url('../fonts/raleway-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -25,7 +24,6 @@
     url('../fonts/raleway-bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
-
 }
 
 @font-face {
@@ -34,7 +32,6 @@
     url('../fonts/light/raleway-light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
-
 }
 
 @font-face {
@@ -43,11 +40,7 @@
     url('../fonts/raleway-extralight.woff') format('woff');
     font-weight: 200;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'raleway';
@@ -55,7 +48,6 @@
     url('../fonts/raleway-medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
-
 }
 
 @font-face {
@@ -73,8 +65,8 @@ body {
 
 .cointainer {
     margin: 0 auto;
-    width: 1000px;
-    border: 1px solid red;
+    width: 1050px;
+    /*border: 1px solid red;*/
 }
 
 /*---------------------------------------------------------------
@@ -83,6 +75,7 @@ body {
 /*---------------------------------------------------------------
    site-header
  --------------------------------------------------------------*/
+
 .site-header {
     background-color: black;
     padding: 10px 0;
@@ -114,8 +107,8 @@ body {
 .header-menu a {
     text-decoration: none;
     color: white;
-
-
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 .header-menu li {
@@ -128,10 +121,12 @@ body {
 /*---------------------------------------------------------------
    big-chair-section
  --------------------------------------------------------------*/
+
 .big-chair-section {
     background-color: #FAFAFA;
     background-image: linear-gradient(180deg, #FAFAFA, #D1D0D8);
-    padding: 45px 0;
+    padding-top: 45px;
+    padding-bottom: 20px;
 }
 
 .big-chair-section .column1 {
@@ -143,7 +138,6 @@ body {
     width: 40%;
     float: left;
     text-align: center;
-
 }
 
 .big-chair-section h1 {
@@ -167,6 +161,11 @@ body {
     border-radius: 5px;
     margin: 15px auto;
 }
+
+.button:hover {
+    background-color: #6FABA9;
+}
+
 .see-more {
     text-decoration: none;
     text-transform: uppercase;
@@ -174,15 +173,12 @@ body {
     font-size: 18px;
     display: inline-block;
     padding: 13px 35px;
-
 }
 
 .green-word-h1 {
     color: #30B99F;
     font-weight: bold;
-
 }
-
 
 .big-chair-section .cointainer {
     position: relative;
@@ -206,16 +202,13 @@ body {
 }
 
 
-
-
 /*---------------------------------------------------------------
    chairs-section
  --------------------------------------------------------------*/
 
-
 .chairs-section {
     background-color: white;
-    padding-bottom: 68px;
+    padding-bottom: 58px;
     padding-top: 30px;
 }
 
@@ -243,7 +236,6 @@ body {
     font-weight: bold;
     margin-bottom: 15px;
     margin-top: 7px;
-
 }
 
 .chairs-section-h2::after {
@@ -255,14 +247,12 @@ body {
     margin-top: 3px;
 }
 
-
 .chairs-section-p {
     font-size: 13px;
     margin-bottom: 22px;
     line-height: 17px;
     color: #979797;
     font-weight: 500;
-
 }
 
 .chairs-section-p:last-child {
@@ -281,13 +271,13 @@ body {
     bottom: 20px;
     left:15px;
     padding: 15px 15px 23px;
-
 }
 
 
 /*---------------------------------------------------------------
    price-list-section
  --------------------------------------------------------------*/
+
 .price-list-section .column {
     padding-right: 15px;
     padding-left: 15px;
@@ -299,6 +289,7 @@ body {
     margin-right: -15px;
     margin-left: -15px;
 }
+
 .price-list-section {
     background-color: #F1F1F1;
     padding-top: 45px;
@@ -308,8 +299,9 @@ body {
 .header-sections-h2 {
     text-transform: uppercase;
     color: #535353;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 500;
+    margin-bottom: 44px;
 }
 
 .header-sections-h2::after {
@@ -319,13 +311,12 @@ body {
     width: 320px;
     height: 7px;
     margin-top: 4px;
-    margin-bottom: 70px;
 }
 
 .price-tag {
-    /*width: 265px;*/
     height: 497px;
     text-align: center;
+    margin-top: 26px;
     background-color: #F9F9F9;
     border: 2px solid #D3D3D3;
     position: relative;
@@ -360,7 +351,6 @@ body {
     text-align: center;
     margin-top: 33px;
     margin-bottom: 30px;
-
 }
 
 .green-font {
@@ -370,7 +360,6 @@ body {
 .white-font {
     color: #FFFFFF;
 }
-
 
 .circle-with-price {
     width: 128px;
@@ -393,6 +382,7 @@ body {
     border: 2px solid #30B99F;
     color: #30B99F;
 }
+
 .circle-with-price p {
 
     color: #C2C2C2;
@@ -407,7 +397,6 @@ body {
     margin-bottom: 7px;
     font-weight: 600;
     margin-left: -15px;
-
 }
 
 .circle-with-price p sup {
@@ -443,6 +432,7 @@ body {
     background-color: #FFFFFF;
     color: #8A8A8A;
 }
+
 .button1 {
     background-color: #30B99F;
     display: inline-block;
@@ -463,6 +453,20 @@ body {
     border-radius: 7px;
     margin-top: 38px;
 }
+
+.button1:hover,
+.button3:hover {
+    -webkit-box-shadow: 0px 0px 24px -1px rgba(59,148,123,1);
+    -moz-box-shadow: 0px 0px 24px -1px rgba(59,148,123,1);
+    box-shadow: 0px 0px 24px -1px rgba(59,148,123,1);
+}
+
+.button2:hover {
+    -webkit-box-shadow: 0px 0px 24px -1px rgba(231,245,241,1);
+    -moz-box-shadow: 0px 0px 24px -1px rgba(231,245,241,1);
+    box-shadow: 0px 0px 24px -1px rgba(231,245,241,1);
+}
+
 .join {
     text-decoration: none;
     display: inline-block;
@@ -491,8 +495,6 @@ body {
 }
 
 
-
-
 /*---------------------------------------------------------------
    form-section
  --------------------------------------------------------------*/
@@ -502,14 +504,135 @@ body {
     padding: 35px 0;
 }
 
+.form-section .column1 {
+    float: left;
+    width: 60%;
+}
+
+.form-section .column2 {
+    float: left;
+    width: 40%;
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    width: 600px;
+    font-size: 27px;
+    padding: 15px 10px;
+    font-weight: 100;
+    margin-bottom: 25px;
+    border: 1px solid #B2E5D8;
+    letter-spacing: 1px;
+}
+
+::-webkit-input-placeholder {
+    color: #CECECE;
+}
+
+textarea {
+    height: 187px;
+    resize: none;
+}
+
+.red-chair {
+    display: inline-block;
+    margin-top: -25px;
+    width: 246px;
+}
+
+#agreement {
+    display: inline-block;
+    margin-top: 35px;
+    margin-left: 45px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    color: #C2C2C2;
+    text-align: left;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label span {
+    vertical-align: middle;
+    display: inline-block;
+    float: left;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #B2E5D8;
+    background: url("../images/form_ok.jpg") no-repeat;
+    background-position: -3px;
+    margin-right: 14px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+    background-image: url("../images/form_ok.jpg");
+}
+
+.button-send {
+    background-color: #30B99F;
+    padding: 20px;
+    border-radius: 7px;
+    height: 70px;
+    width: 315px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 35px;
+}
+
+.button-send:hover {
+    background-color: #6FABA9;
+}
+
+.send {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    color: white;
+}
 
 
-
-
-
+/*---------------------------------------------------------------
+   footer
+ --------------------------------------------------------------*/
 
 .site-footer {
     background-color: white;
-    padding: 80px;
+    position: relative;
+    padding: 30px;
+}
+
+.site-footer p {
+    color: #A4A4A4;
+    font-size: 15px;
+    letter-spacing: 1px;
+    float: left;
+}
+
+.site-footer span {
+    font-weight: bold;
+}
+
+.logo-footer {
+    color: #9A9A9A;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: right;
+}
+
+.footer-images {
+    position: absolute;
+    top: 22px;
+    right: 400px;
 }
 
