@@ -111,12 +111,79 @@ body {
     letter-spacing: 1px;
 }
 
-.header-menu li {
+.header-menu>li {
     display: inline-block;
     padding: 0 10px;
     font-weight: bold;
     font-size: 12px;
+    position: relative;
 }
+
+/*.header-menu>li>ul.invisible,*/
+/*.header-menu>li>ul>div.invisible{*/
+
+    /*display: none;*/
+/*}*/
+
+.header-menu>li>ul{
+    font-size: 12px;
+    list-style: none;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    position: absolute;
+    top:35px;
+    z-index: 3;
+    display: none;
+    background-color: black;
+
+}
+
+.header-menu>li>ul .square-transparent {
+    position: relative;
+    /*height: 20px;*/
+    /*width: 20px;*/
+    /*padding-top: 30px;*/
+    background-color: transparent;
+    z-index: 1;
+}
+
+.square {
+    width: 17px;
+    height: 17px;
+    background-color: black;
+    position: absolute;
+    top:-5px;
+    left: 28px;
+    transform: rotate(45deg);
+    z-index: 2;
+    /*padding-top: 15px;*/
+
+
+
+
+}
+
+
+.submenu {
+    padding:10px;
+    position: relative;
+    z-index: 2;
+}
+
+.slider ul{
+    list-style: none;
+}
+
+.slider li{
+    display: none;
+}
+
+.slider .visible{
+    display: inline-block;
+}
+
+
 
 /*---------------------------------------------------------------
    big-chair-section
@@ -187,6 +254,7 @@ body {
 .less-greater-signs {
     font-size: 64px;
     color: #30B99F;
+    cursor: pointer;
 }
 
 .less-than-sign {
@@ -493,7 +561,6 @@ body {
     padding-top: 25px;
     position: relative;
 }
-
 
 /*---------------------------------------------------------------
    form-section
